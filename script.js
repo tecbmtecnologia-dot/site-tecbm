@@ -23,6 +23,6 @@ form.addEventListener('submit', (e) => {
   const mensagem = data.get('mensagem');
   const subject = encodeURIComponent(`Contato pelo site - ${nome}`);
   const body = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`);
-  window.location.href = `mailto:contato@tecbm.com.br?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:tecbmtecnologia@gmail.com?subject=${subject}&body=${body}`;
   formNote.textContent = 'Abrindo seu aplicativo de e-mail para enviar a mensagem...';
 });

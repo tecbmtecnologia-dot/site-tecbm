@@ -158,6 +158,11 @@ h1,h2,h3{ font-family: var(--font-head); font-weight:600; line-height:1.15; marg
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
+.portfolio-grid:has(> .portfolio-card:only-child){
+  grid-template-columns: 1fr;
+  max-width: 620px;
+  margin: 0 auto;
+}
 .portfolio-card{
   background: var(--surface);
   border: 1px solid var(--border);
@@ -180,7 +185,7 @@ h1,h2,h3{ font-family: var(--font-head); font-weight:600; line-height:1.15; marg
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position: left center;
+  object-position: center center;
 }
 .ph-1{ background: linear-gradient(135deg, rgba(46,196,182,0.18), rgba(23,163,152,0.08)); }
 .ph-2{ background: linear-gradient(135deg, rgba(23,163,152,0.18), rgba(46,196,182,0.08)); }
