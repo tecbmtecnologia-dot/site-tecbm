@@ -174,7 +174,7 @@ h1,h2,h3{ font-family: var(--font-head); font-weight:600; line-height:1.15; marg
 }
 .portfolio-card:hover{ transform: translateY(-4px); border-color: rgba(23,163,152,0.4); }
 .portfolio-thumb{
-  height: 160px;
+  aspect-ratio: 17 / 5;
   display:flex;
   align-items:center;
   justify-content:center;
