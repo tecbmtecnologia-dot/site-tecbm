@@ -235,6 +235,39 @@ h1,h2,h3{ font-family: var(--font-head); font-weight:600; line-height:1.15; marg
 }
 .glow-logo{ width: 60%; height:auto; }
 
+/* Reviews */
+.reviews-summary{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom: 36px;
+}
+.reviews-score{ font-family: var(--font-head); font-size: 2.2rem; font-weight:700; }
+.reviews-stars{ color:#ffb400; font-size: 1.3rem; letter-spacing:2px; }
+.reviews-count{ color: var(--text-dim); font-size: .95rem; }
+.reviews-summary .btn{ margin-left:auto; }
+.reviews-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.review-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 22px;
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+.review-card .review-stars{ color:#ffb400; font-size: .95rem; letter-spacing:2px; }
+.review-card p{ color: var(--text); font-size: .92rem; flex:1; margin:0; }
+.review-author{ display:flex; align-items:center; justify-content:space-between; color: var(--text-dim); font-size: .85rem; font-weight:600; }
+.review-source{ display:inline-flex; align-items:center; }
+.reviews-cta{ text-align:center; }
+
 /* Contact */
 .contact-inner{
   display:grid;
@@ -368,6 +401,7 @@ a.contact-item:hover{ color: var(--cyan); }
   .portfolio-grid{ grid-template-columns: 1fr; }
   .about-inner, .contact-inner{ grid-template-columns: 1fr; }
   .about-visual{ order:-1; }
+  .reviews-grid{ grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 720px){
@@ -375,6 +409,8 @@ a.contact-item:hover{ color: var(--cyan); }
   .menu-toggle{ display:flex; }
   .cards-grid{ grid-template-columns: 1fr; }
   .hero{ padding: 90px 0 60px; }
+  .reviews-grid{ grid-template-columns: 1fr; }
+  .reviews-summary .btn{ margin-left:0; }
 
   body.nav-open .nav{
     display:flex;
