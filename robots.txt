@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tecbm.com.br/sitemap.xml
